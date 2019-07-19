@@ -40,7 +40,8 @@ subplot(2,3,4)
 histogram(de_lin)
 xlabel('dE')
 ylabel('Count')
-title(sprintf('u=%.2f, s=%.2f',mean(de_lin),std(de_lin)),'Interpreter','none')
+str = sprintf('\\mu=%.2f,\\sigma=%.2f',mean(de_lin),std(de_lin))
+title(str)
 
 subplot(2,3,5)
 de_flipped = flip(de,1);
