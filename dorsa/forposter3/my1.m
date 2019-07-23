@@ -13,6 +13,6 @@ de_lin = sum((lab1_lin - lab2_lin).^2,2).^0.5;
 de = reshape(de_lin,size(lab2,1),size(lab2,2));
 
 %corrcoef(lab1_lin(:,1),lab2_lin(:,1))
-de = mean(de_lin)
+de = mean(de_lin);
 
 end

@@ -18,7 +18,7 @@ mean(de_lin)
 figure('units','normalized','outerposition',[0 0 1 1])
 
 de_flipped = flip(de,1);
-mesh(de_flipped)
+surf(de_flipped,'LineStyle','none')
 axis image
 axis off
 colorbar('southoutside')
