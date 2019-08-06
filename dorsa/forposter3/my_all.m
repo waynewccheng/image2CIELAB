@@ -33,6 +33,8 @@ fn2 = folder2(strfind(folder2,'/')+1:end);
 
 saveas(gcf,sprintf('%s-%s.tif',fn1,fn2))
 
+save(sprintf('%s-%s.mat',fn1,fn2),'data')
+
 return
 
 end
